@@ -1,0 +1,6 @@
+
+criar projeto - ng new aula02 
+
+compilar o projeito - ng serve
+
+compilar o projeito e abre o projeto - ng serve -o
