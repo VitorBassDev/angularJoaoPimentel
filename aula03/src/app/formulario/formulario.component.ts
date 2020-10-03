@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioComponent implements OnInit {
 
-  variavel: number = 15;
+  mostrarNome: boolean = true;
+
+  trocar(){
+    this.mostrarNome = !this.mostrarNome;
+  }
   constructor() { }
 
   ngOnInit(): void {
