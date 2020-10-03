@@ -1,16 +1,19 @@
 <!--<input type="text" (input)="variavel = Event.target.value"> 
 <h2 *ngif = variavel> 10 > </h2>-->
 
-Exemplo de diretiva de ngif
-<div *ngIf="this.mostrarNome" class="box">
-  Nome: Pebinha da Silva
+<div class="container"> 
+  
+  <p class="h1"> Exemplo de diretiva de ngif </p>
+  <div *ngIf="this.mostrarNome" class="box">
+    <span class="p-1 mb-2 bg-warning text-dark">Nome: Pebinha da Silva</span>
+    
+  </div>
+
+  <div *ngIf="!this.mostrarNome" class="box">
+    <span class="p-1 mb-2 bg-info text-dark">email: pebinha@gmail.com</span>  
+  </div>
+
+  <button type="button" (click)="this.trocar()" class="mt-4 btn btn-outline-success">Alterar</button>
 </div>
-
-<div *ngIf="!this.mostrarNome" class="box">
-  email: pebinha@gmail.com
-</div>
-
-<button (click)="this.trocar()"> Alterar</button>
-
 
 <!-- <h2 *ngif= variavel >10 "> Numero digitado maior que 10 ></h2> -->
