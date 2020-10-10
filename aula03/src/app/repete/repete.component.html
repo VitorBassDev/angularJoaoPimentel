@@ -1,0 +1,33 @@
+
+<div class="container">
+  <h1>NGFOR</h1>
+  <div class=row>
+    <div class=col-3>
+      <ul>
+        <li *ngFor="let nomes of items">
+          {{nomes}}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-4">
+      <div *ngFor="let n of numeros">
+        <div *ngIf="n %2 == 0" class="list-group-item list-group-item-primary">
+          {{n}}
+        </div>
+    
+        <div *ngIf="n %2 == 1" class="list-group-item list-group-item-secondary">
+          {{n}}
+        </div>
+      </div>
+    </div>
+    
+    <div class=col-4>
+      <div *ngFor="let n of numeros">
+        <div *ngIf="n %2 == 0">
+          {{n}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
